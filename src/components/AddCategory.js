@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
 export const AddCategory = ({ setCategories }) => {
     const [inputValue, setInputValue] = useState('');
@@ -28,6 +28,6 @@ export const AddCategory = ({ setCategories }) => {
     )
 }
 
-AddCategory.prototype = {
-    setCategories: PropType.func.isRequired
+AddCategory.propTypes = {
+    setCategories: PropTypes.func.isRequired
 }
